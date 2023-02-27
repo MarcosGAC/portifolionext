@@ -12,18 +12,17 @@
 }
 .navbaritens {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   text-decoration: none;
   list-style-type: none;
-  width: 300px;
+  width: 400px;
   margin: 2rem;
-  background-color: #242729;
 }
 .navlink {
   text-decoration: none;
   color: white;
   font-size: 20px;
-  background-color: #242729;
+
 }
 .aboutcontent {
   max-height: 60vh;

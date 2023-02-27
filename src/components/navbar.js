@@ -21,11 +21,11 @@ export default function Navbar() {
   return (
     <div className={styles.navbar}>
       <div className={styles.navcontent}>
-        <ul className={styles.navbaritens}>
+        <ul className={`${styles.navbaritens} bg-transparent`}>
           {nav.map((item) => {
             return (
-              <li key={item.name}>
-                <Link className={styles.navlink} href={item.url}
+              <li key={item.name} className="bg-transparent">
+                <Link className={`${styles.navlink} bg-transparent hover:underline`} href={item.url}
                 >
                   {item.name}
                 </Link>
