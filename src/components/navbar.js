@@ -4,15 +4,15 @@ import styles from "../../styles/style.module.css";
 
 const nav = [
   {
-    name: "About",
+    name: "Sobre mim",
     url: "/",
   },
   {
-    name: "Skills",
+    name: "Habilidades",
     url: "/skills",
   },
   {
-    name: "Projects",
+    name: "Projetos",
     url: "/projects",
   },
 ];
