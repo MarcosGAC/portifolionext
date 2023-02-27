@@ -1,0 +1,95 @@
+.navbar {
+  min-height: 80px;
+  position: fixed;
+  width: 100%;
+}
+
+.navcontent {
+  display: flex;
+  align-items: center;
+  padding-left: 8%;
+  background-color: #242729;
+}
+.navbaritens {
+  display: flex;
+  justify-content: space-around;
+  text-decoration: none;
+  list-style-type: none;
+  width: 300px;
+  margin: 2rem;
+  background-color: #242729;
+}
+.navlink {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  background-color: #242729;
+}
+.aboutcontent {
+  max-height: 60vh;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.title {
+  text-align: center;
+  padding-top: 100px;
+  font-size: 50px;
+  color: rgb(81, 218, 218);
+}
+.textcontent {
+  font-weight: lighter;
+  color: lightsteelblue;
+  font-size: 35px;
+  margin-top: 100px;
+}
+
+.subtitle {
+  padding-left: 10%;
+  font-size: 50px;
+  padding-top: 200px;
+}
+
+.skillsitems {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skillscard {
+  display: flex;
+  justify-content: center;
+  width: 25%;
+  align-items: center;
+  margin: 16px;
+  padding: 16px;
+  border-radius: 25px;
+  background-color: #3d3e3f !important;
+}
+.skillscard:hover {
+  background-color: #636a6f !important;
+  color: #fff !important;
+  border: none !important;
+  cursor: hand;  
+  box-shadow: 2px 2px 2px 1px #06b6d4;
+  transition: all 200ms;
+
+}
+.skillsimage {
+  height: 100px;
+  width: 100px;
+  background-color: transparent;
+}
+.skillscontent {
+  color: white;
+  display: grid;
+  min-height: 90vh;
+}
+.skillstextcontent {
+  font-weight: lighter;
+  color: lightsteelblue;
+  font-size: 35px;
+  padding-left: 10%;
+}
+.projectscontent{
+    padding-top: 100px;
+}
