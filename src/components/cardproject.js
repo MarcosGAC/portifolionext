@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-
 export default function CardProject(props) {
-
 
   return (
     <Link href={props.link} className="shadow-lg hover:shadow-cyan-500 h-full transition-all duration-200 bg-zinc-500  w-[350px]  flex m-4 flex-wrap rounded-[20px]">
@@ -16,15 +14,13 @@ export default function CardProject(props) {
         <div
           className="shadow hover:shadow-md hover:shadow-cyan-500 hover:bg-zinc-600  transition-all duration-200  h-full w-[350px] bg-zinc-500 rounded-[20px] py-4 px-4  flex-wrap  min-h-[348px]"
         >
-          <Image
+          <img
             src={props.img}
             className="w-full h-56 mx-auto object-cover "
             alt={props.name}
-          ></Image>
+          ></img>
           <div className="mt-2 bg-transparent">
             <h1 className="font-bold md:text-xl bg-transparent ">{props.name}</h1>
-            <p className="font-light text-gray-400  ">{props.desc}</p>
-            <p className="font-light text-gray-400 ">{props.date}</p>
           </div>
         </div>
       )}
