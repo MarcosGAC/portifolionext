@@ -1,12 +1,21 @@
-import pokedex from "../public/pokedex.png";
-import netflix from "../public/netflix.png";
-import NLW from "../public/NLW.png";
-import styles from "../styles/style.module.css";
 import CardProject from "@/src/components/cardproject";
+import React, { useEffect, useState } from "react";
+import styles from "../styles/style.module.css";
+;
 
 
 export default function Projects(props) {
 
+  const [projetos, setProjetos] = useState([]);
+
+  useEffect(() => {
+      fetch('https://my-json-server.typicode.com/MarcosGAC/projetos-api/projetos')
+          .then(resposta => resposta.json())
+          .then(dados => {
+              setProjetos(dados)
+          })
+  }, [])
+ 
 
   return (
     <div className=" text-white   pl-[10%] pr-[10%] ">
@@ -17,22 +26,12 @@ export default function Projects(props) {
         </p>
       </div>
       <div className="flex flex-wrap items-center justify-center">
-        <CardProject
-          name="A project based in netflix to train react Rooks"
-          img={netflix}
-          link={"https://estudo-net-flix.vercel.app/"}
-        />
-        <CardProject
-          name="Project developed for housing management"
-          img={NLW}
-          link={"https://habits-web-ten.vercel.app/"}
-        />
-        <CardProject
-          name="A pokédex created with Reactjs to practice"
-          img={pokedex}
-          link={"https://pokedex-pokeapi-two.vercel.app/"}
-        />
-        <CardProject name="shortly" link="" />
+      {projetos.map(projeto =>{
+         console.log(projeto)
+        return(
+          <CardProject name={projeto.name} img={projeto.img} link={projeto.link} key={projeto.id}/>
+        )
+       })}
       </div>
     </div>
   );
